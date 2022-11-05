@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 /* GLOBAL STYLES */
 * {
@@ -8,6 +8,7 @@
 
 html , body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
