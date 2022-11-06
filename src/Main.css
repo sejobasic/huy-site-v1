@@ -6,10 +6,11 @@
   box-sizing: border-box;
 }
 
-html , body {
+html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   background: #181818;
+  color: whitesmoke;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -28,9 +29,20 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main-container {
-  width: 85%;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .content-container {
+  max-width: 1200px;
   width: 90%;
+  margin: 100px auto 0;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -15,20 +15,12 @@ function App() {
     <Router>
       <div className='main-container'>
         <Navbar />
-        <div className="content-container">
+        <div className='content-container'>
           <Routes>
-            <Route path='/'>
-              <Home />
-            </Route>
-            <Route path='/About'>
-              <About />
-            </Route>
-            <Route path='/Releases'>
-              <Releases />
-            </Route>
-            <Route path='/Contact'>
-              <Contact />
-            </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Releases" element={<Releases />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
       </div>
