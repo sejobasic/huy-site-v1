@@ -13,6 +13,7 @@ function Home() {
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
         allowfullscreen
       ></iframe>
+      <div className="line"></div>
       <iframe
         src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'
         title='Spotify'
