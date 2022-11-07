@@ -1,14 +1,26 @@
 import React from 'react'
 import '../styles/Navbar.css'
 
+import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 
 import logo from '../media/huy.png'
 
 function Navbar() {
+  const navVariant = {
+    hidden: { opacity: 0, y: '-100%' },
+    visible: {
+      opacity: 1,
+      y: '0%',
+      transition: {
+        duration: 1.5,
+      },
+    },
+  }
+
   return (
     <div className='nav-container'>
-      <nav>
+      <motion.nav initial='hidden' animate='visible' variants={navVariant}>
         <div className='logo-container'>
           <NavLink to='/'>
             <img src={logo} alt='huy logo' />
@@ -20,7 +32,7 @@ function Navbar() {
           <NavLink to='/Releases'>Releases</NavLink>
           <NavLink to='/Contact'>Contact</NavLink>
         </div>
-      </nav>
+      </motion.nav>
     </div>
   )
 }

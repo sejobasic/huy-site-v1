@@ -2,12 +2,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/About.css'
 import placeholder from '../media/placeholder.jpg'
+import Line from '../components/Line'
 
 function About() {
   return (
     <div className='flex-column'>
       <img className='artist-image' src={placeholder} alt='artist portrait' />
-      <div className='line'></div>
+      <Line />
       <p>
         From Saigon, Vietnam, Huy is an artist set to change the standard. With
         his father's introduction to rock/metal at such a young age, Huy

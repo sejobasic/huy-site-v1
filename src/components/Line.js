@@ -19,7 +19,6 @@ function Line() {
       variants={lineVariant}
       initial='hidden'
       animate='visible'
-      exit='hidden'
     ></motion.div>
   )
 }
