@@ -1,3 +1,4 @@
+import Cursor from "react-special-cursor";
 import './Main.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -14,6 +15,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <Router>
+      <Cursor borderClassName='cursor-border'>
       <div className='main-container'>
         <Navbar />
         <div className='content-container'>
@@ -26,6 +28,7 @@ function App() {
         <Footer />
         </div>
       </div>
+      </Cursor>
     </Router>
   )
 }

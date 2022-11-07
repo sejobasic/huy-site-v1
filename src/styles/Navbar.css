@@ -10,6 +10,7 @@
 
 .logo-container img {
   width: 60px;
+  cursor: pointer;
 }
 
 .nav-items a {
@@ -20,6 +21,7 @@
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .nav-items a::before {

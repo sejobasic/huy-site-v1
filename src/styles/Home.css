@@ -4,4 +4,11 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
+}
+
+.spotify-wrapper,
+.video-wrapper {
+  width: 100%;
+  text-align: center;
 }

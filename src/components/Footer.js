@@ -1,10 +1,11 @@
 import React from 'react'
 import '../styles/Footer.css'
+import Line from './Line'
 
 function Footer() {
   return (
     <div className='footer'>
-      <div className='line'></div>
+      <Line />
       <div className='footer-container'>
         <a
           href='https://www.facebook.com/huyouthere'
@@ -49,7 +50,7 @@ function Footer() {
           Apple Music
         </a>
       </div>
-      <div className='line'></div>
+      <Line />
     </div>
   )
 }

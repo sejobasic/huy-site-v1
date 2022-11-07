@@ -1,3 +1,9 @@
-.flex-column img {
+.artist-image {
   width: 500px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.artist-image:hover {
+  filter: none;
 }
