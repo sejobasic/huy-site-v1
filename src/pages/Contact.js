@@ -24,6 +24,30 @@ function Contact() {
     },
   }
 
+  const formVariant = {
+    hidden: {
+      y: '-100vh',
+      opacity: 0,
+    },
+    visible: {
+      y: '0',
+      opacity: 1,
+      transition: { duration: 1 },
+    },
+  }
+
+  const btnVariant = {
+    hidden: {
+      width: '0',
+      opacity: 0,
+    },
+    visible: {
+      width: '100%',
+      opacity: 1,
+      transition: { duration: 2 },
+    },
+  }
+
   const submitEmail = (e) => {
     e.preventDefault()
 
@@ -52,20 +76,34 @@ function Contact() {
   return (
     <>
       <div className='flex-column'>
-        <h2>Contact Us</h2>
-        <form className='contact-form' ref={form} onSubmit={submitEmail}>
-          <input type='text' name='user_name' placeholder='Enter your name' />
+        <motion.form 
+          className='contact-form' 
+          ref={form} 
+          onSubmit={submitEmail}
+          variants={formVariant}
+          initial='hidden'
+          animate='visible'
+          >
+          <h2>Contact Us</h2>
+          <input type='text' name='user_name' placeholder='Enter your name' required />
           <input
             type='email'
             name='user_email'
             placeholder='Enter your email'
+            required
           />
-          <input type='text' name='user_subject' placeholder='Subject:' />
+          <input type='text' name='user_subject' placeholder='Subject:' required />
           <textarea name='message' placeholder='Message:'></textarea>
-          <button type='submit' value='Send'>
+          <motion.button 
+            type='submit' 
+            value='Send'
+            variants={btnVariant}
+            initial='hidden'
+            animate='visible'
+          >
             Submit
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </div>
 
       <div className='modal-cont'>

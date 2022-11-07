@@ -1,4 +1,5 @@
 .artist-image {
+  position: relative;
   width: 500px;
   filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;
