@@ -4,6 +4,7 @@
   height: 50px;
   left: 0;
   right: 0;
+  background: var(--bg-color);
 }
 
 .footer-container {

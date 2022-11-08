@@ -28,63 +28,65 @@ function Footer() {
 
   return (
     <div className='footer'>
-      <Line />
-      <motion.div
-        className='footer-container'
-        variants={footerVariant}
-        initial='hidden'
-        animate='visible'
-      >
-        <motion.a
-          href='https://www.facebook.com/huyouthere'
-          target='_blank'
-          rel='noreferrer'
-          variants={itemVariant}
+      <footer>
+        <Line />
+        <motion.div
+          className='footer-container'
+          variants={footerVariant}
+          initial='hidden'
+          animate='visible'
         >
-          Facebook
-        </motion.a>
-        <motion.a
-          href='https://www.instagram.com/huyouthere/'
-          target='_blank'
-          rel='noreferrer'
-          variants={itemVariant}
-        >
-          Instagram
-        </motion.a>
-        <motion.a
-          href='https://twitter.com/huyouthere'
-          target='_blank'
-          rel='noreferrer'
-          variants={itemVariant}
-        >
-          Twitter
-        </motion.a>
-        <motion.a
-          href='https://www.tiktok.com/@huyouthere'
-          target='_blank'
-          rel='noreferrer'
-          variants={itemVariant}
-        >
-          Tik Tok
-        </motion.a>
-        <motion.a
-          href='https://open.spotify.com/artist/1NTMbL31XUN7LvSUq8VjMc?si=gq8D96WPSkSYVSfT9BK7iw'
-          target='_blank'
-          rel='noreferrer'
-          variants={itemVariant}
-        >
-          Spotify
-        </motion.a>
-        <motion.a
-          href='https://music.apple.com/us/artist/huy/450736253'
-          target='_blank'
-          rel='noreferrer'
-          variants={itemVariant}
-        >
-          Apple Music
-        </motion.a>
-      </motion.div>
-      <Line />
+          <motion.a
+            href='https://www.facebook.com/huyouthere'
+            target='_blank'
+            rel='noreferrer'
+            variants={itemVariant}
+          >
+            Facebook
+          </motion.a>
+          <motion.a
+            href='https://www.instagram.com/huyouthere/'
+            target='_blank'
+            rel='noreferrer'
+            variants={itemVariant}
+          >
+            Instagram
+          </motion.a>
+          <motion.a
+            href='https://twitter.com/huyouthere'
+            target='_blank'
+            rel='noreferrer'
+            variants={itemVariant}
+          >
+            Twitter
+          </motion.a>
+          <motion.a
+            href='https://www.tiktok.com/@huyouthere'
+            target='_blank'
+            rel='noreferrer'
+            variants={itemVariant}
+          >
+            Tik Tok
+          </motion.a>
+          <motion.a
+            href='https://open.spotify.com/artist/1NTMbL31XUN7LvSUq8VjMc?si=gq8D96WPSkSYVSfT9BK7iw'
+            target='_blank'
+            rel='noreferrer'
+            variants={itemVariant}
+          >
+            Spotify
+          </motion.a>
+          <motion.a
+            href='https://music.apple.com/us/artist/huy/450736253'
+            target='_blank'
+            rel='noreferrer'
+            variants={itemVariant}
+          >
+            Apple Music
+          </motion.a>
+        </motion.div>
+        <Line />
+      </footer>
     </div>
   )
 }
