@@ -30,19 +30,20 @@ function Home() {
 
   return (
     <div className='home-container'>
-      <motion.iframe
-        width='560'
-        height='315'
-        src='https://www.youtube.com/embed/NSsbmdNAEFY'
-        title='YouTube video player'
-        frameborder='0'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-        allowfullscreen
-        variants={videoVariant}
-        initial='hidden'
-        animate='visible'
-      ></motion.iframe>
-
+      <div className='youtube-wrapper'>
+        <motion.iframe
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/NSsbmdNAEFY'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen
+          variants={videoVariant}
+          initial='hidden'
+          animate='visible'
+        ></motion.iframe>
+      </div>
       <Line />
       <motion.iframe
         src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'

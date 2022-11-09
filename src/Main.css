@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html,
@@ -22,6 +23,7 @@ body {
   color: var(--text-color);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img,
@@ -59,7 +61,8 @@ h6 {
 .content-container {
   max-width: 1200px;
   width: 95%;
-  margin: 200px auto 0;
+  margin: 150px auto 0;
+  padding-bottom: 100px;
 }
 
 .flex-column {

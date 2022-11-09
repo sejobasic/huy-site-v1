@@ -31,6 +31,7 @@ function App() {
         ) : (
           <div className='main-container'>
             <Navbar />
+            <Footer />
             <div className='content-container'>
               <Routes>
                 <Route path='/' element={<Home />} />
@@ -39,7 +40,6 @@ function App() {
                 <Route path='/Contact' element={<Contact />} />
               </Routes>
             </div>
-            <Footer />
           </div>
         )}
       </Cursor>
