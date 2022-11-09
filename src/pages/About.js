@@ -27,7 +27,7 @@ function About() {
   }
   
   return (
-    <div className='flex-column'>
+    <div className='about-wrapper flex-column'>
       <motion.img
         className='artist-image'
         src={placeholder}
@@ -37,7 +37,7 @@ function About() {
         animate='visible'
       />
       <Line />
-      <motion.p variants={aboutVariant} initial='hidden' animate='visible'>
+      <motion.p className='about-text' variants={aboutVariant} initial='hidden' animate='visible'>
         From Saigon, Vietnam, <strong>Huy</strong> is an artist set to change
         the standard. With his father's introduction to rock/metal at such a
         young age, Huy instantly knew he had found his passion. Knowing his

@@ -8,11 +8,6 @@
   justify-content: space-between;
 }
 
-.logo-container img {
-  width: 60px;
-  cursor: pointer;
-}
-
 .nav-items a {
   position: relative;
   margin-left: 15px;

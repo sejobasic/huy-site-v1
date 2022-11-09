@@ -38,8 +38,8 @@ function App() {
                 <Route path='/Releases' element={<Releases />} />
                 <Route path='/Contact' element={<Contact />} />
               </Routes>
-              <Footer />
             </div>
+            <Footer />
           </div>
         )}
       </Cursor>

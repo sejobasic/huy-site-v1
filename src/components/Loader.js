@@ -14,7 +14,7 @@ function Loader() {
       y: '100vh',
       transition: {
         delay: 3,
-        duration: 6,
+        duration: 3,
       },
     },
   }

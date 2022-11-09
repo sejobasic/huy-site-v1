@@ -23,7 +23,7 @@ function Navbar() {
       <motion.nav initial='hidden' animate='visible' variants={navVariant}>
         <div className='logo-container'>
           <NavLink to='/'>
-            <img src={logo} alt='huy logo' />
+            <img className='logo' src={logo} alt='huy logo' />
           </NavLink>
         </div>
         <div className='nav-items'>

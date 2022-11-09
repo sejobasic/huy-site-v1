@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+
+import logo from '../media/huy.png'
 import '../styles/Footer.css'
 import Line from './Line'
 
@@ -27,11 +29,23 @@ function Footer() {
   }
 
   return (
-    <div className='footer'>
-      <footer>
+    <div className='footer-container'>
+      <motion.div
+        className='footer-logo'
+        variants={footerVariant}
+        initial='hidden'
+        animate='visible'
+      >
+        <motion.img
+          className='logo'
+          src={logo}
+          alt='huy logo'
+          variants={itemVariant}
+        />
+      </motion.div>
         <Line />
         <motion.div
-          className='footer-container'
+          className='footer-content'
           variants={footerVariant}
           initial='hidden'
           animate='visible'
@@ -86,7 +100,6 @@ function Footer() {
           </motion.a>
         </motion.div>
         <Line />
-      </footer>
     </div>
   )
 }
