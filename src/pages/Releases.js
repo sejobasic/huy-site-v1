@@ -25,43 +25,45 @@ function Releases() {
     },
   }
   return (
-    <motion.div 
-      className='flex-column'
-      variants={releasesVariant}
-      initial='hidden'
-      animate='visible'
-    >
-      <motion.iframe
-        src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'
-        title='Spotify'
-        width='80%'
-        height='200'
-        frameBorder='0'
-        allowfullscreen=''
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        variants={itemVariant}
-      ></motion.iframe>
-      <motion.iframe
-        src='https://open.spotify.com/embed/track/1a0Om9pOdvcNmX00KoVJ6Z?utm_source=generator&theme=0'
-        title='Spotify'
-        width='80%'
-        height='200'
-        frameBorder='0'
-        allowfullscreen=''
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        variants={itemVariant}
-      ></motion.iframe>
-      <motion.iframe
-        src='https://open.spotify.com/embed/track/2OYi0cHqHDiTbdGHe5gccb?utm_source=generator&theme=0'
-        title='Spotify'
-        width='80%'
-        height='200'
-        frameBorder='0'
-        allowfullscreen=''
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        variants={itemVariant}
-      ></motion.iframe>
-    </motion.div>
+    <>
+      <motion.div
+        className='flex-column'
+        variants={releasesVariant}
+        initial='hidden'
+        animate='visible'
+      >
+        <motion.iframe
+          src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'
+          title='Spotify'
+          width='80%'
+          height='200'
+          frameBorder='0'
+          allowfullscreen=''
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          variants={itemVariant}
+        ></motion.iframe>
+        <motion.iframe
+          src='https://open.spotify.com/embed/track/1a0Om9pOdvcNmX00KoVJ6Z?utm_source=generator&theme=0'
+          title='Spotify'
+          width='80%'
+          height='200'
+          frameBorder='0'
+          allowfullscreen=''
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          variants={itemVariant}
+        ></motion.iframe>
+        <motion.iframe
+          src='https://open.spotify.com/embed/track/2OYi0cHqHDiTbdGHe5gccb?utm_source=generator&theme=0'
+          title='Spotify'
+          width='80%'
+          height='200'
+          frameBorder='0'
+          allowfullscreen=''
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          variants={itemVariant}
+        ></motion.iframe>
+      </motion.div>
+    </>
   )
 }
 

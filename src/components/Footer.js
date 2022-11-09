@@ -30,19 +30,6 @@ function Footer() {
 
   return (
     <div className='footer-container'>
-      <motion.div
-        className='footer-logo'
-        variants={footerVariant}
-        initial='hidden'
-        animate='visible'
-      >
-        <motion.img
-          className='logo'
-          src={logo}
-          alt='huy logo'
-          variants={itemVariant}
-        />
-      </motion.div>
         <Line />
         <motion.div
           className='footer-content'

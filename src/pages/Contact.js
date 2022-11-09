@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import '../styles/Contact.css'
+import Footer from '../components/Footer'
 
 function Contact() {
   const [showModal, setShowModal] = useState(false)
@@ -128,6 +129,7 @@ function Contact() {
           )}
         </AnimatePresence>
       </div>
+      <Footer />
     </>
   )
 }

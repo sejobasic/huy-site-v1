@@ -49,16 +49,18 @@
 }
 
 @media (max-width: 500px) {
-  .logo {
-    display: none;
-  }
 
   .nav-container nav {
     justify-content: center;
+    flex-direction: column;
   }
   
   .nav-items a {
     font-size: 1rem;
     gap: 5px;
+  }
+
+  .logo {
+    padding-bottom: 10px;
   }
 }

@@ -31,7 +31,6 @@ function App() {
         ) : (
           <div className='main-container'>
             <Navbar />
-            <Footer />
             <div className='content-container'>
               <Routes>
                 <Route path='/' element={<Home />} />
