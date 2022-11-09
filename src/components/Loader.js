@@ -7,14 +7,30 @@ import coverVideo from '../media/video.mp4'
 import '../styles/Loader.css'
 
 function Loader() {
+  const loaderVariant = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 0,
+      y: '100vh',
+      transition: {
+        delay: 3,
+        duration: 6,
+      },
+    },
+  }
   return (
-    <div className='loader-wrapper'>
+    <motion.div
+      className='loader-wrapper'
+      initial='hidden'
+      animate='visible'
+      variants={loaderVariant}
+    >
       <div className='overlay'></div>
       <div className='loader-logo'>
         <img src={logo} alt='huy logo' />
       </div>
       <video className='video' src={coverVideo} autoPlay loop muted></video>
-    </div>
+    </motion.div>
   )
 }
 
