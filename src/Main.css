@@ -50,7 +50,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* .main-container {
+.main-container {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
@@ -60,7 +60,7 @@ h6 {
   max-width: 1200px;
   width: 95%;
   margin: 200px auto 0;
-} */
+}
 
 .flex-column {
   display: flex;
@@ -82,4 +82,10 @@ h6 {
 .logo {
   width: 60px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .content-container {
+    margin: 50px auto;
+  }
 }
