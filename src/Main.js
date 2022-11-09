@@ -10,7 +10,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Releases from './pages/Releases'
 import Contact from './pages/Contact'
-import Footer from './components/Footer'
 import Loader from './components/Loader'
 import { useEffect, useState } from 'react'
 

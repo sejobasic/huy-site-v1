@@ -1,7 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
-import logo from '../media/huy.png'
 import '../styles/Footer.css'
 import Line from './Line'
 
