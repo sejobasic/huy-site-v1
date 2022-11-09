@@ -108,7 +108,13 @@ function Contact() {
             placeholder='Subject:'
             required
           />
-          <textarea name='message' placeholder='Message:'></textarea>
+          <textarea
+            type='text'
+            minlength='10'
+            name='message'
+            placeholder='Message:'
+            required
+          ></textarea>
           <motion.button
             type='submit'
             value='Send'
