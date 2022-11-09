@@ -33,7 +33,7 @@ function Home() {
       <motion.iframe
         width='560'
         height='315'
-        src='https://www.youtube.com/embed/4nyld2SqleU'
+        src='https://www.youtube.com/embed/NSsbmdNAEFY'
         title='YouTube video player'
         frameborder='0'
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -44,18 +44,18 @@ function Home() {
       ></motion.iframe>
 
       <Line />
-        <motion.iframe
-          src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'
-          title='Spotify'
-          width='70%'
-          height='300'
-          frameBorder='0'
-          allowfullscreen=''
-          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-          variants={spotifyVariant}
-          initial='hidden'
-          animate='visible'
-        ></motion.iframe>
+      <motion.iframe
+        src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'
+        title='Spotify'
+        width='70%'
+        height='300'
+        frameBorder='0'
+        allowfullscreen=''
+        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+        variants={spotifyVariant}
+        initial='hidden'
+        animate='visible'
+      ></motion.iframe>
     </div>
   )
 }

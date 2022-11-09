@@ -11,12 +11,14 @@ import About from './pages/About'
 import Releases from './pages/Releases'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+import Loader from "./components/Loader"
 
 function App() {
   return (
     <Router>
       <Cursor borderClassName='cursor-border'>
-      <div className='main-container'>
+        <Loader />
+      {/* <div className='main-container'>
         <Navbar />
         <div className='content-container'>
           <Routes>
@@ -27,7 +29,7 @@ function App() {
           </Routes>
         <Footer />
         </div>
-      </div>
+      </div> */}
       </Cursor>
     </Router>
   )

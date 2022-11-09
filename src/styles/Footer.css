@@ -26,3 +26,11 @@
 .footer-container a:hover {
   color: var(--btn-color);
 }
+
+
+@media (max-width: 580px) {
+
+.footer-container a {
+  font-size: 0.7rem;
+}
+}
