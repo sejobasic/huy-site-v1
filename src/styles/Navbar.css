@@ -49,12 +49,11 @@
 }
 
 @media (max-width: 500px) {
-
   .nav-container nav {
     justify-content: center;
     flex-direction: column;
   }
-  
+
   .nav-items a {
     font-size: 1rem;
     gap: 5px;

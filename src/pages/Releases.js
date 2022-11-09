@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+
+// Styles
 import '../styles/Releases.css'
 
 function Releases() {

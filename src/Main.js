@@ -1,5 +1,5 @@
+import { useEffect, useState } from 'react'
 import Cursor from 'react-special-cursor'
-import './Main.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // Components
@@ -11,7 +11,9 @@ import About from './pages/About'
 import Releases from './pages/Releases'
 import Contact from './pages/Contact'
 import Loader from './components/Loader'
-import { useEffect, useState } from 'react'
+
+// Styles
+import './Main.css'
 
 function App() {
   const [loading, setLoading] = useState(false)

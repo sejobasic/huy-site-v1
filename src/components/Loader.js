@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+// Media
 import logo from '../media/huy.png'
 import coverVideo from '../media/video.mp4'
 
+// Styles
 import '../styles/Loader.css'
 
 function Loader() {

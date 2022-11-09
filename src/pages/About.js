@@ -1,8 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../styles/About.css'
+
+// Media
 import placeholder from '../media/placeholder.jpg'
 import Line from '../components/Line'
+
+// Styles
+import '../styles/About.css'
 
 function About() {
   const imageVariant = {

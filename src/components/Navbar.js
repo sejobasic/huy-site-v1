@@ -1,10 +1,12 @@
 import React from 'react'
-import '../styles/Navbar.css'
-
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 
+// Media
 import logo from '../media/huy.png'
+
+// Styles
+import '../styles/Navbar.css'
 
 function Navbar() {
   const navVariant = {

@@ -1,8 +1,12 @@
 import React, { useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-import '../styles/Contact.css'
+
+// Components
 import Footer from '../components/Footer'
+
+// Styles
+import '../styles/Contact.css'
 
 function Contact() {
   const [showModal, setShowModal] = useState(false)
@@ -77,26 +81,36 @@ function Contact() {
   return (
     <>
       <div className='flex-column'>
-        <motion.form 
-          className='contact-form' 
-          ref={form} 
+        <motion.form
+          className='contact-form'
+          ref={form}
           onSubmit={submitEmail}
           variants={formVariant}
           initial='hidden'
           animate='visible'
-          >
+        >
           <h2>Contact Us</h2>
-          <input type='text' name='user_name' placeholder='Enter your name' required />
+          <input
+            type='text'
+            name='user_name'
+            placeholder='Enter your name'
+            required
+          />
           <input
             type='email'
             name='user_email'
             placeholder='Enter your email'
             required
           />
-          <input type='text' name='user_subject' placeholder='Subject:' required />
+          <input
+            type='text'
+            name='user_subject'
+            placeholder='Subject:'
+            required
+          />
           <textarea name='message' placeholder='Message:'></textarea>
-          <motion.button 
-            type='submit' 
+          <motion.button
+            type='submit'
             value='Send'
             variants={btnVariant}
             initial='hidden'

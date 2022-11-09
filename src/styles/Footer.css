@@ -18,7 +18,6 @@
   background: var(--bg-color);
 }
 
-
 .footer-content a {
   text-decoration: none;
   color: var(--text-color);
@@ -39,18 +38,16 @@
   width: 100%;
 }
 
-
 @media (max-width: 580px) {
+  .footer-container a {
+    font-size: 0.5rem;
+  }
 
-.footer-container a {
-  font-size: 0.5rem;
-}
+  .footer-logo {
+    display: flex;
+  }
 
-.footer-logo {
-  display: flex;
-}
-
-.footer {
-  margin-bottom: 50px;
-}
+  .footer {
+    margin-bottom: 50px;
+  }
 }

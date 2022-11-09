@@ -1,8 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../styles/Home.css'
+
+// Components
 import Line from '../components/Line'
 import Footer from '../components/Footer'
+
+// Styles
+import '../styles/Home.css'
 
 function Home() {
   const videoVariant = {
