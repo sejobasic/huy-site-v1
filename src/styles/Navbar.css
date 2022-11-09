@@ -1,5 +1,6 @@
 .nav-container {
-  margin-top: 15px;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 
 .nav-container nav {
@@ -39,4 +40,18 @@
 
 .nav-items a.active {
   color: var(--btn-color);
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+
+  .nav-container nav {
+    justify-content: center;
+  }
+  
+  .nav-items a {
+    font-size: 1.5em;
+  }
 }

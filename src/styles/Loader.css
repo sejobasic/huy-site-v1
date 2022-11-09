@@ -10,6 +10,8 @@ video {
   object-fit: cover;
 }
 
+
+
 .loader-logo {
   position: absolute;
   display: flex;
@@ -43,3 +45,8 @@ video {
   background: rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 500px) {
+  video {
+    display: none;
+  }
+}
