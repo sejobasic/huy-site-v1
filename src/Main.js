@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import Cursor from 'react-special-cursor'
-// import AnimatedCursor from 'react-animated-cursor'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // Components
@@ -27,7 +25,6 @@ function App() {
   }, [])
   return (
     <Router>
-      <Cursor borderClassName='cursor-border'>
         {loading ? (
           <Loader />
         ) : (
@@ -43,7 +40,6 @@ function App() {
             </div>
           </div>
         )}
-      </Cursor>
     </Router>
   )
 }
