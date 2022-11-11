@@ -49,7 +49,7 @@ function About() {
           // showNav={true}
           showThumbnails={false}
           // showFullscreenButton={false}
-          // showPlayButton={false}
+          showPlayButton={false}
         />
       </motion.span>
       <Line />
