@@ -1,24 +1,33 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import ImageGallery from 'react-image-gallery'
 
 // Media
-import placeholder from '../media/placeholder.jpg'
+import imgOne from '../media/img1.jpeg'
+import imgTwo from '../media/img2.jpeg'
+import imgThree from '../media/img3.jpeg'
+
+// Components
 import Line from '../components/Line'
 
 // Styles
 import '../styles/About.css'
 
 function About() {
-  const imageVariant = {
-    hidden: { opacity: 0, transform: 'scale(0)' },
-    visible: {
-      opacity: 1,
-      transform: 'scale(1)',
-      transition: {
-        duration: 1.5,
-      },
+  const images = [
+    {
+      original: imgThree,
+      thumbnail: imgThree,
     },
-  }
+    {
+      original: imgTwo,
+      thumbnail: imgTwo,
+    },
+    {
+      original: imgOne,
+      thumbnail: imgOne,
+    },
+  ]
 
   const aboutVariant = {
     hidden: { opacity: 0 },
@@ -29,19 +38,27 @@ function About() {
       },
     },
   }
-  
+
   return (
     <div className='about-wrapper flex-column'>
-      <motion.img
-        className='artist-image'
-        src={placeholder}
-        alt='artist portrait'
-        variants={imageVariant}
+      <motion.span variants={aboutVariant} initial='hidden' animate='visible'>
+        <ImageGallery
+          items={images}
+          autoPlay={true}
+          slideDuration={600}
+          // showNav={true}
+          showThumbnails={false}
+          // showFullscreenButton={false}
+          // showPlayButton={false}
+        />
+      </motion.span>
+      <Line />
+      <motion.p
+        className='about-text'
+        variants={aboutVariant}
         initial='hidden'
         animate='visible'
-      />
-      <Line />
-      <motion.p className='about-text' variants={aboutVariant} initial='hidden' animate='visible'>
+      >
         From Saigon, Vietnam, <strong>Huy</strong> is an artist set to change
         the standard. With his father's introduction to rock/metal at such a
         young age, Huy instantly knew he had found his passion. Knowing his

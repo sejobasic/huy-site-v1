@@ -8,6 +8,10 @@
   --btn-color: #0080ff;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+  }
+
 /* GLOBAL STYLES */
 * {
   margin: 0;
