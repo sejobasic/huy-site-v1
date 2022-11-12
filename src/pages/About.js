@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 import ImageGallery from 'react-image-gallery'
 
@@ -39,17 +39,20 @@ function About() {
     },
   }
 
+
+
   return (
     <div className='about-wrapper flex-column'>
       <motion.span variants={aboutVariant} initial='hidden' animate='visible'>
         <ImageGallery
           items={images}
           autoPlay={true}
-          slideDuration={600}
+          slideDuration={500}
+          slideInterval={8000}
           // showNav={true}
           showThumbnails={false}
           // showFullscreenButton={false}
-          showPlayButton={false}
+          showPlayButton={true}
         />
       </motion.span>
       <Line />
