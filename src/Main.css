@@ -8,9 +8,9 @@
   --btn-color: #0080ff;
 }
 
-::-webkit-scrollbar { 
-  display: none; 
-  }
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* GLOBAL STYLES */
 * {
@@ -47,19 +47,16 @@ select {
   font: inherit;
 }
 
-input {
-  border-radius: 0;
-}
-
-input[type='search'],
+input,
 textarea {
+  border-radius: 0;
+  -webkit-border-radius: 0px;
   -webkit-appearance: none;
 }
 
 header {
   margin: 0;
 }
-
 
 p,
 h1,
