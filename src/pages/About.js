@@ -39,8 +39,6 @@ function About() {
     },
   }
 
-
-
   return (
     <div className='about-wrapper flex-column'>
       <motion.span variants={aboutVariant} initial='hidden' animate='visible'>

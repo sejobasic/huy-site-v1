@@ -51,7 +51,8 @@ input {
   border-radius: 0;
 }
 
-input[type='search'] {
+input[type='search'],
+textarea {
   -webkit-appearance: none;
 }
 
