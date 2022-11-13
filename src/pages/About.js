@@ -52,7 +52,7 @@ function About() {
           // showNav={true}
           showThumbnails={false}
           // showFullscreenButton={false}
-          showPlayButton={true}
+          // showPlayButton={true}
         />
       </motion.span>
       <Line />
