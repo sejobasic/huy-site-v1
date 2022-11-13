@@ -25,21 +25,21 @@ function App() {
   }, [])
   return (
     <Router>
-        {loading ? (
-          <Loader />
-        ) : (
-          <div className='main-container'>
-            <Navbar />
-            <div className='content-container'>
-              <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/About' element={<About />} />
-                <Route path='/Releases' element={<Releases />} />
-                <Route path='/Contact' element={<Contact />} />
-              </Routes>
-            </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className='main-container'>
+          <Navbar />
+          <div className='content-container'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/About' element={<About />} />
+              <Route path='/Releases' element={<Releases />} />
+              <Route path='/Contact' element={<Contact />} />
+            </Routes>
           </div>
-        )}
+        </div>
+      )}
     </Router>
   )
 }

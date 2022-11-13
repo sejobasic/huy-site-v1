@@ -20,6 +20,16 @@ function Loader() {
       },
     },
   }
+
+  const logoVariant = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+      },
+    },
+  }
   return (
     <motion.div
       className='loader-wrapper'
@@ -29,7 +39,13 @@ function Loader() {
     >
       <div className='overlay'></div>
       <div className='loader-logo'>
-        <img src={logo} alt='huy logo' />
+        <motion.img 
+          src={logo} 
+          alt='huy logo' 
+          initial='hidden'
+          animate='visible'
+          variants={logoVariant}
+        />
       </div>
       <video className='video' src={coverVideo} autoPlay loop muted></video>
     </motion.div>
