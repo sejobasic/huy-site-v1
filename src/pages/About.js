@@ -18,14 +18,17 @@ function About() {
     {
       original: imgThree,
       thumbnail: imgThree,
+      originalAlt: 'Huy artist portrait photograph'
     },
     {
       original: imgTwo,
       thumbnail: imgTwo,
+      originalAlt: 'Huy artist portrait photograph'
     },
     {
       original: imgOne,
       thumbnail: imgOne,
+      originalAlt: 'Huy artist portrait photograph'
     },
   ]
 

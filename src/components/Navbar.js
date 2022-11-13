@@ -21,21 +21,23 @@ function Navbar() {
   }
 
   return (
-    <div className='nav-container'>
-      <motion.nav initial='hidden' animate='visible' variants={navVariant}>
-        <div className='logo-container'>
-          <NavLink to='/'>
-            <img className='logo' src={logo} alt='huy logo' />
-          </NavLink>
-        </div>
-        <div className='nav-items'>
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/About'>About</NavLink>
-          <NavLink to='/Releases'>Releases</NavLink>
-          <NavLink to='/Contact'>Contact</NavLink>
-        </div>
-      </motion.nav>
-    </div>
+    <header>
+      <div className='nav-container'>
+        <motion.nav initial='hidden' animate='visible' variants={navVariant}>
+          <div className='logo-container'>
+            <NavLink to='/'>
+              <img className='logo' src={logo} alt='huy logo' />
+            </NavLink>
+          </div>
+          <div className='nav-items'>
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/About'>About</NavLink>
+            <NavLink to='/Releases'>Releases</NavLink>
+            <NavLink to='/Contact'>Contact</NavLink>
+          </div>
+        </motion.nav>
+      </div>
+    </header>
   )
 }
 

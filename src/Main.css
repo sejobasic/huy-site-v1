@@ -56,6 +56,11 @@ textarea {
   -webkit-appearance: none;
 }
 
+header {
+  margin: 0;
+}
+
+
 p,
 h1,
 h2,
