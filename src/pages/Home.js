@@ -34,7 +34,7 @@ function Home() {
   }
 
   return (
-    <>
+    <main>
       <div className='home-container'>
         <div className='youtube-wrapper'>
           <motion.iframe
@@ -65,7 +65,7 @@ function Home() {
         ></motion.iframe>
       </div>
       <Footer />
-    </>
+    </main>
   )
 }
 
