@@ -94,18 +94,21 @@ function Contact() {
             type='text'
             name='user_name'
             placeholder='Enter your name'
+            aria-label="Name"
             required
           />
           <input
             type='email'
             name='user_email'
             placeholder='Enter your email'
+            aria-label="Email"
             required
           />
           <input
             type='text'
             name='user_subject'
             placeholder='Subject:'
+            aria-label="Subject"
             required
           />
           <textarea
@@ -113,6 +116,7 @@ function Contact() {
             minlength='10'
             name='message'
             placeholder='Message:'
+            aria-label="Message Body"
             required
           ></textarea>
           <motion.button
