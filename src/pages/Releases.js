@@ -35,6 +35,16 @@ function Releases() {
         animate='visible'
       >
         <motion.iframe
+          src="https://open.spotify.com/embed/track/4Td8CojUxipsiT6OLLPZku?utm_source=generator&theme=0"
+          title='Spotify'
+          width='80%'
+          height='200'
+          frameBorder='0'
+          allowfullscreen=''
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          variants={itemVariant}
+        ></motion.iframe>
+        <motion.iframe
           src='https://open.spotify.com/embed/track/5iGVtn4ZJVCmwXn3Xj8TpF?utm_source=generator&theme=0'
           title='Spotify'
           width='80%'
