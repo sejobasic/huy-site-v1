@@ -89,7 +89,6 @@ function Footer() {
             Apple Music
           </motion.a>
         </motion.div>
-        <Line />
       </div>
     </footer>
   )
