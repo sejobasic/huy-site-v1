@@ -28,6 +28,7 @@
 
 .footer-container a:hover {
   color: var(--btn-color);
+  transition: all 0.3s ease;
 }
 
 .footer-logo {

@@ -33,6 +33,7 @@ function Home() {
     },
   }
 
+  
   return (
     <main>
       <div className='home-container'>
@@ -52,7 +53,7 @@ function Home() {
         </div>
         <Line />
         <motion.iframe
-          src="https://open.spotify.com/embed/track/4Td8CojUxipsiT6OLLPZku?utm_source=generator&theme=0"
+          src="https://open.spotify.com/embed/track/2MywKKa8UBxKSR74m8jbeW?utm_source=generator&theme=0"
           title='Spotify'
           width='70%'
           height='300'

@@ -44,6 +44,7 @@
 .contact-form button:hover {
   background-color: var(--btn-color);
   color: var(--bg-color);
+  transition: all .3s ease;
 }
 
 .flex-column h2 {

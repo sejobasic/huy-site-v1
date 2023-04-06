@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import ImageGallery from 'react-image-gallery'
 
 // Media
-import imgOne from '../media/img1.jpeg'
-import imgTwo from '../media/img2.jpeg'
-import imgThree from '../media/img3.jpeg'
+// import imgOne from '../media/img1.jpeg'
+// import imgTwo from '../media/img2.jpeg'
+import imgMain from '../media/imgmain.JPG'
 
 // Components
 import Line from '../components/Line'
@@ -16,20 +16,20 @@ import '../styles/About.css'
 function About() {
   const images = [
     {
-      original: imgThree,
-      thumbnail: imgThree,
+      original: imgMain,
+      thumbnail: imgMain,
       originalAlt: 'Huy artist portrait photograph'
     },
-    {
-      original: imgTwo,
-      thumbnail: imgTwo,
-      originalAlt: 'Huy artist portrait photograph'
-    },
-    {
-      original: imgOne,
-      thumbnail: imgOne,
-      originalAlt: 'Huy artist portrait photograph'
-    },
+    // {
+    //   original: imgTwo,
+    //   thumbnail: imgTwo,
+    //   originalAlt: 'Huy artist portrait photograph'
+    // },
+    // {
+    //   original: imgOne,
+    //   thumbnail: imgOne,
+    //   originalAlt: 'Huy artist portrait photograph'
+    // },
   ]
 
   const aboutVariant = {
