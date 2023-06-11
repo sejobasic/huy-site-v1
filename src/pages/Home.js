@@ -33,10 +33,23 @@ function Home() {
     },
   }
 
-  
   return (
     <main>
       <div className='home-container'>
+        <div className='youtube-wrapper'>
+          <motion.iframe
+            width='560'
+            height='315'
+            src='https://www.youtube.com/embed/1bzfnINDUdM'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen
+            variants={videoVariant}
+            initial='hidden'
+            animate='visible'
+          ></motion.iframe>
+        </div>
         <div className='youtube-wrapper'>
           <motion.iframe
             width='560'
@@ -53,7 +66,7 @@ function Home() {
         </div>
         <Line />
         <motion.iframe
-          src="https://open.spotify.com/embed/track/2MywKKa8UBxKSR74m8jbeW?utm_source=generator&theme=0"
+          src='https://open.spotify.com/embed/track/2MywKKa8UBxKSR74m8jbeW?utm_source=generator&theme=0'
           title='Spotify'
           width='70%'
           height='300'
